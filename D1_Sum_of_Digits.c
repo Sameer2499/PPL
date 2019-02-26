@@ -6,12 +6,8 @@ void main()
   int num;
   scanf("%d",&num);
   int sum=0;
-  while(num>0)
-  {
-    int d=num%10;
-    sum+=d;
-    num/=10;
-   }
-   printf("Sum of Number's Digit is:%d",sum);
-   getch();
+  nt d=num%10,d2=num%100,d3=num%1000;
+  sum=d+d2+d3;
+  printf("Sum of Number's Digit is:%d",sum);
+  getch();
  }
